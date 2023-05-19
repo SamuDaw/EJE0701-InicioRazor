@@ -1,0 +1,24 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EJE0701
+build_property.RootNamespace = EJE0701
+build_property.ProjectDir = C:\Users\Samuel\OneDrive\1º DAW\PRO - Programacion\Proyectos\Unidad 7\EJE0701\EJE0701\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Samuel\OneDrive\1º DAW\PRO - Programacion\Proyectos\Unidad 7\EJE0701\EJE0701
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Samuel/OneDrive/1º DAW/PRO - Programacion/Proyectos/Unidad 7/EJE0701/EJE0701/Pages/CalculaDias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3VsYURpYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Samuel/OneDrive/1º DAW/PRO - Programacion/Proyectos/Unidad 7/EJE0701/EJE0701/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

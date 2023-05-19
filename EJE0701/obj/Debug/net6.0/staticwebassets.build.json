@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "t7yl76h3H5nuaajy4FBMuYN5DpA4/kha5sLmaUMAhYw=",
+  "Source": "EJE0701",
+  "BasePath": "_content/EJE0701",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EJE0701\\wwwroot",
+      "Source": "EJE0701",
+      "ContentRoot": "C:\\Users\\Samuel\\OneDrive\\1º DAW\\PRO - Programacion\\Proyectos\\Unidad 7\\EJE0701\\EJE0701\\wwwroot\\",
+      "BasePath": "_content/EJE0701",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Samuel\\OneDrive\\1º DAW\\PRO - Programacion\\Proyectos\\Unidad 7\\EJE0701\\EJE0701\\wwwroot\\css\\StyleSheet.css",
+      "SourceId": "EJE0701",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Samuel\\OneDrive\\1º DAW\\PRO - Programacion\\Proyectos\\Unidad 7\\EJE0701\\EJE0701\\wwwroot\\",
+      "BasePath": "_content/EJE0701",
+      "RelativePath": "css/StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+    }
+  ]
+}

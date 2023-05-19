@@ -1,0 +1,165 @@
+﻿@page
+@model EJE0701.IndexModel
+@{
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>EJE0701</title>
+    </head>
+    <body>
+        <header>Samuel Alvarado Yanes - 1º DAW B</header>
+        <section>
+        @{
+            if (Request.Method == "POST")
+            {
+                string ejercicio = Request.Query["ejercicio"];
+                switch (ejercicio)
+                {
+                    case "1":
+                        decimal num1 = Decimal.Parse(Request.Form["num1"]);
+                        decimal num2 = Decimal.Parse(Request.Form["num2"]);
+                        decimal suma = num1 + num2;
+                        decimal resta = num1 - num2;
+                        decimal multiplicacion = num1 * num2;
+                        decimal division = num1 / num2;
+
+                        <div class="formulario">
+                            <form name="formEjercicio1" method="post" action="/?ejercicio=1">
+                            <fieldset>
+                                        <input type="number" name="num1" placeholder="@num1" />
+                                        <input type="number" name="num2" placeholder="@num2" />
+                                <input type="submit" value="Calcular!" />
+                             </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="resultado">
+                            <span>Suma</span>
+                            <br />
+                            <span>@num1 + @num2 = @suma</span>
+                            <br />
+                            <span>Resta</span>
+                            <br />
+                            <span>@num1 - @num2 = @resta</span>
+                            <br />
+                            <span>Multiplciación</span>
+                            <br />
+                            <span>@num1 x @num2 = @multiplicacion</span>
+                            <br />
+                            <span>División</span>
+                            <br />
+                            <span>@num1 / @num2 = @division</span>
+                            <p></p>
+                            </div>
+                            break;
+
+                        case "2":
+                            string texto = Request.Form["texto"];
+                            string textoAux = texto;
+                            string palabra = Request.Form["palabra"];
+                            int contador = 0;
+
+                            @while (textoAux.Contains(palabra))
+                                {
+                                    contador++;
+                                    textoAux = textoAux.Remove(0, (textoAux.IndexOf(palabra) + palabra.Length));
+                                }
+                            <h1>Cuenta Palabras</h1>
+
+                            <span>Frase: @texto</span>
+                            <br/>
+                            <span>Palabra: @palabra</span>
+                            <br/>
+                            <span>La palabra "@palabra" aparece @contador veces.</span>
+
+                        break;
+                    case "3":
+                        <div>
+                            <form name="formEjercicio3" method="post" action="/?ejercicio=3">
+                            <fieldset>
+                                <input type="date" name="fecha" />
+                                <input type="submit" value="Contar días!" />
+                            </fieldset>
+                            </form>
+                        </div>
+
+
+                        break;
+                }
+            }
+            else
+            {
+                if (Request.Method == "GET")
+                {
+                    string ejercicio = Request.Query["ejercicio"];
+                    switch (ejercicio)
+                    {
+                        case "1":
+                            <div>
+                                <form name="formEjercicio1" method="post" action="/?ejercicio=1">
+                                        <fieldset>
+                                            <input type="number" name="num1" />
+                                            <input type="number" name="num2" />
+                                            <input type="submit" value="Calcular!" />
+                                        </fieldset>
+                                </form>
+                            </div>
+
+
+                            break;
+                        case "2":
+                            <div>
+                                <form name="formEjercicio2" method="post" action="/?ejercicio=2">
+                                
+                                <fieldset>
+                                    <input type="text" name="texto" />
+                                    <input type="text" name="palabra" />
+                                    <input type="submit" value="Contar!" />
+                                </fieldset>
+                                </form>
+                            </div>
+
+
+                            break;
+                        case "3":
+                            <div>
+                                <form name="formEjercicio3" method="post" action="/?ejercicio=3">
+                                    <fieldset>
+                                        <input type="date" name="fecha" />
+                                        <input type="submit" value="Contar días!" />
+                                    </fieldset>
+                                </form>
+                            </div>
+
+
+                            break;
+                    }
+                }
+                else
+                {
+                    <h2>Descripción de los Ejercicios</h2>
+                    <h3>Ejercicio 1</h3>
+                    <p>Consta de la petición de dos números y se devolverán varias operaciones matemáticas realizadas con los antes mencionados.</p>
+
+                    <h3>Ejercicio 2</h3>
+                    <p>Se solicitará un texto y una palabra, El programa mostrará cuantas veces aparece la palabra introducida en el texto.</p>
+
+                    <h3>Ejercicio 3</h3>
+                    <p>Se solicitará una fecha válida (inferior al día de hoy) y se indicarán cuantos días han pasado desde ese momento.</p>
+
+                }
+            }
+        }
+        </section>
+        <aside>
+        
+        <a href="/?ejercicio=1">Ejercicio 1</a>
+        <a href="/?ejercicio=2">Ejercicio 2</a>
+        <a href="/?ejercicio=3">Ejercicio 3</a>
+        
+        </aside>
+        <footer>19/05/2023 - CEIFP César Manrique - Samuel Alvarado Yanes</footer>
+    </body>
+    </html>
+}
