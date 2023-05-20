@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t7yl76h3H5nuaajy4FBMuYN5DpA4/kha5sLmaUMAhYw=",
+  "Hash": "3MoLl70yYt7TwDdZzheYGtfjsDPsy35N8AQFMqOG3x4=",
   "Source": "EJE0701",
   "BasePath": "_content/EJE0701",
   "Mode": "Default",
@@ -32,6 +32,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+    },
+    {
+      "Identity": "C:\\Users\\Samuel\\OneDrive\\1º DAW\\PRO - Programacion\\Proyectos\\Unidad 7\\EJE0701\\EJE0701\\wwwroot\\img\\Imagen1.png",
+      "SourceId": "EJE0701",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Samuel\\OneDrive\\1º DAW\\PRO - Programacion\\Proyectos\\Unidad 7\\EJE0701\\EJE0701\\wwwroot\\",
+      "BasePath": "_content/EJE0701",
+      "RelativePath": "img/Imagen1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Imagen1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Samuel\\OneDrive\\1º DAW\\PRO - Programacion\\Proyectos\\Unidad 7\\EJE0701\\EJE0701\\wwwroot\\img\\Imagen2.png",
+      "SourceId": "EJE0701",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Samuel\\OneDrive\\1º DAW\\PRO - Programacion\\Proyectos\\Unidad 7\\EJE0701\\EJE0701\\wwwroot\\",
+      "BasePath": "_content/EJE0701",
+      "RelativePath": "img/Imagen2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Imagen2.png"
     }
   ]
 }
